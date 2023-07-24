@@ -1,0 +1,10 @@
+*creating the backup :
+
+
+uri : mongodb+srv://afif:<password>@cluster0.2oejr1s.mongodb.net/?retryWrites=true&w=majority
+command : mongodump --uri "mongodb+srv://afif:einstein14thmarch@cluster0.2oejr1s.mongodb.net/test" --gzip
+
+*Recovering :
+
+
+mongorestore --uri "mongodb+srv://afif:<password>@cluster0.ivuwedg.mongodb.net/" --gzip --nsInclude="test.orders"  -> for each type of schema
